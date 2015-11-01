@@ -11,6 +11,7 @@ wget http://cocos2d-x.org/filedown/cocos2d-x-${VERSION}.zip
 SRC=cocos2d-x-${VERSION} 
 unzip ${SRC}.zip
 cd /opt/$SRC
+python download-deps.py
 ./setup.py
 cd ..
 rm  ${SRC}.zip
