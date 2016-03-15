@@ -5,7 +5,7 @@ sudo apt-get install -y python
 sudo apt-get install -y ant
 
 # download cocos2d-x
-VERSION=3.8.1
+VERSION=3.10
 cd /opt
 wget http://cocos2d-x.org/filedown/cocos2d-x-${VERSION}.zip
 SRC=cocos2d-x-${VERSION} 
