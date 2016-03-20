@@ -1,4 +1,5 @@
 #!/bin/bash
 
 touch ~/.xinitrc
-echo "caps:swapescape" > ~/.xinitrc
+echo "setxkbmap -option caps:swapescape" > ~/.xinitrc
+source ~/.xinitrc
