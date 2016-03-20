@@ -10,13 +10,19 @@ else
 fi
 ANDROID_STUDIO_FOLDER=android-studio
 if [ -d $ANDROID_STUDIO_FOLDER ]; then 
-  echo "Android stuido folder already existed"
+  echo "Android studio folder already existed"
 else
   echo "Extract Android Studio zip"
   unzip $ANDROID_STUDIO_ZIP
 fi
 
 mv $ANDROID_STUDIO_FOLDER /opt
+
+if [ -d ~/.local/share/applications ]; then
+  echo "Good that the applications folder is existing"
+else
+  mkdir ~/.local/share/applications
+fi
 
 FILE_NAME=~/.local/share/applications/android-studio.desktop
 
