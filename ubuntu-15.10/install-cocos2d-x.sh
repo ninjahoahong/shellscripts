@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /tmp
+
 # build tool
 sudo apt-get install -y python
 sudo apt-get install -y ant
